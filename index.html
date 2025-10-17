@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card - Osemwegie Elnathan Omoregie</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <article data-testid="test-profile-card">
+    <div class="profile-header">
+      <div class="avatar-section">
+        <a href="https://itznat-portfolio.netlify.app/">
+          <figure>
+            <img data-testid="test-user-avatar"
+              src="images/elzio.png"
+              alt="Geek Potrait of me">
+            <figcaption>Frontend Developer</figcaption>
+          </figure>
+        </a>
+      </div>
+
+      <div class="profile-info">
+        <header>
+          <a href="https://itznat-portfolio.netlify.app/">
+            <h2 data-testid="test-user-name">Osemwegie Elnathan Omoregie</h2>
+          </a>
+        </header>
+        <p data-testid="test-user-bio">
+          Passionate frontend developer with 2+ years of experience creating accessible, responsive web applications. Love working with modern JavaScript frameworks. Really just a cool guy.
+        </p>
+        <div class="time-display">
+          <strong>Current Time (Milliseconds):</strong>
+          <span data-testid="test-user-time" id="currentTime">Loading...</span>
+        </div>
+      </div>
+    </div>
+
+    <nav aria-label="Social media profiles">
+      <ul data-testid="test-user-social-links">
+        <li>
+          <a data-testid="test-user-social-github" href="https://github.com/itzNat" target="_blank"
+            rel="noopener noreferrer" class="social-link">
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a data-testid="test-user-social-twitter" href="https://x.com/Itz_Naht" target="_blank"
+            rel="noopener noreferrer" class="social-link">
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a data-testid="test-user-social-linkedin" href="https://www.linkedin.com/in/itz-nat/" target="_blank"
+            rel="noopener noreferrer" class="social-link">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="lists-container">
+      <section aria-labelledby="hobbies-heading">
+        <h3 id="hobbies-heading">Hobbies & Interests</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>My code when it works the first time after running</li>
+          <li>Fixing my own bugs</li>
+          <li>Nature Photography</li>
+          <li>Reading Manhuas and Light Novels</li>
+          <li>Playing Sudoku and chess</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="dislikes-heading">
+        <h3 id="dislikes-heading">Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>When my code works the first time then doesn't work again</li>
+          <li>Youtube unskippable ads</li>
+          <li>Network lag while gaming/coding</li>
+          <li>Forcing a convo</li>
+          <li>When there's no light in the night and mosquito sings in my ear</li>
+        </ul>
+      </section>
+    </div>
+  </article>
+  <script src="js/script.js"></script>
+</body>
+</html>
